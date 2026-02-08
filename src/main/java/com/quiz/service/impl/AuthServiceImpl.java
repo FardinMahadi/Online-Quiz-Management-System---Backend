@@ -16,7 +16,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.transaction.annotation.Transactional;
+
 @Service
+@Transactional
 public class AuthServiceImpl implements AuthService {
 
     @Autowired
